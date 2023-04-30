@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply w-screen min-h-screen bg-zinc-400;
+  @apply w-screen min-h-screen bg-zinc-400 font-sans;
 }
 
 main {

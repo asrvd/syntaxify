@@ -1,0 +1,1 @@
+import{b as e}from"./browser-polyfill.894f94c2.js";e.contextMenus.create({id:"myContextMenu",title:"Explain this code",contexts:["selection"]});e.contextMenus.onClicked.addListener((n,t)=>{e.tabs.sendMessage(t==null?void 0:t.id,{method:"getSelection"}),e.tabs.create({url:e.runtime.getURL("sty.html")})});
