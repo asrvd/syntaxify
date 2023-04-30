@@ -16,7 +16,7 @@ Want to learn more about this tool and how it was made? Keep reading!
 
 The extension was made by me from scratch and it was not at all an easy task. Being my first chrome extension, I had to go through a lot of resources and references to create it. The first step to creating this extension is to create an NLP model using [MindsDB](https://mindsbd.com).
 
-* Create a free account on \[MindsDB\](https://mindsdb.com) to get access to their cloud dashboard.
+* Create a free account on [MindsDB](https://mindsdb.com) to get access to their cloud dashboard.
     
 * Create your OpenAI model using the Editor, you can change the name of columns and model to whatever you want.
     
