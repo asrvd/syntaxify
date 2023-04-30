@@ -1,6 +1,6 @@
 {
-  "name": "Vite/React/TailwindCSS Plugin",
-  "description": "A Cross Browser Template for Google Chrome",
+  "name": "Syntaxify",
+  "description": "Your personal code explainer",
   "version": "1.0.0",
   "manifest_version": 3,
   "action": {
@@ -9,9 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://blank.org/*"
-      ],
+      "matches": ["<all_urls>"],
       "run_at": "document_end",
       "js": [
         "./index.global.js"
@@ -22,7 +20,8 @@
     }
   ],
   "permissions": [
-    "storage"
+    "storage",
+    "contextMenus"
   ],
   "background": {
     "service_worker": "./background.global.js"

@@ -1,18 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import browser from "webextension-polyfill";
+import "./index.css";
 
-const index = document.createElement('div')
-index.id = 'extension-root';
+console.log("Syntaxify loaded! Copy a code snippet to get it's explanation.");
 
-const body = document.querySelector('body')
-if (body) {
-  body.prepend(index)
-}
+// document.addEventListener("mouseup", function (event) {
+//   var sel = window.getSelection()?.toString();
+//   console.log(sel);
 
-ReactDOM.createRoot(index).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+//   if (sel?.length)
+//     browser.runtime.sendMessage({
+//       action: "Hi from content script 👋",
+//       selection: sel,
+//     });
+// });
+
+browser.runtime.onMessage.addListener(function (request) {
+  console.log(request);
+  if (request.method == "getSelection") {
+    var sel = window.getSelection()?.toString();
+    console.log(sel);
+
+    if (sel?.length) browser.storage.local.set({ selection: sel });
+  }
+});

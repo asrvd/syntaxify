@@ -1,0 +1,41 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,300,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-screen min-h-screen bg-zinc-400;
+}
+
+main {
+  @apply flex flex-col items-center justify-center w-full h-screen p-3 gap-3;
+}
+
+h1 {
+  @apply text-4xl font-black;
+}
+
+.selected-text {
+  @apply font-mono text-base tracking-tight h-[95%];
+}
+
+.text-header {
+  @apply text-lg font-bold h-[5%];
+}
+
+.main-container {
+  @apply flex items-center justify-center w-full h-full gap-3;
+}
+
+.text-container {
+  @apply w-[60%] overflow-auto min-h-full h-full whitespace-pre bg-zinc-300/80 rounded-md p-4 shadow-xl flex flex-col;
+}
+
+.result-container {
+  @apply w-[40%] min-h-full break-normal bg-zinc-300/80 rounded-md p-4 shadow-xl text-base flex flex-col gap-3;
+}
+
+.result-text {
+  @apply flex items-center gap-3;
+}

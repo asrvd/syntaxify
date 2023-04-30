@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         index: new URL('./popup.html', import.meta.url).pathname,
         background: new URL('./background.html', import.meta.url).pathname,
+        main: new URL('./sty.html', import.meta.url).pathname,
       }
     }
   }
