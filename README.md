@@ -6,7 +6,7 @@ A chrome extension that explains code blocks in a simple and easy-to-understand 
 
 As a developer, we often find ourselves struggling with understanding complex code blocks on differnet sites and resources and spend hours trying to debug and understand them. Reading code written by others is a cumbersome task but it doesn't have to be! What if I told you that there is an extension that can explain those code blocks to you in a matter of seconds?
 
-Introducing Syntaxify, a powerful tool that can help you understand complex code blocks in a simple and easy-to-understand way. Syntaxify lets you select code blocks right from the site and then get its explanation in seconds using \[MindsDB\](https://mindsdb.com)'s excellent NLP integrations with OpenAI.
+Introducing Syntaxify, a powerful tool that can help you understand complex code blocks in a simple and easy-to-understand way. Syntaxify lets you select code blocks right from the site and then get its explanation in seconds using [MindsDB](https://mindsdb.com)'s excellent NLP integrations with OpenAI.
 
 This extension is especially useful for beginners who are just starting out with coding and need some extra help understanding complex concepts. It can also benefit experienced developers who want to save time and speed up their workflow.
 
@@ -14,7 +14,7 @@ Want to learn more about this tool and how it was made? Keep reading!
 
 ## Creating the Extension
 
-The extension was made by me from scratch and it was not at all an easy task. Being my first chrome extension, I had to go through a lot of resources and references to create it. The first step to creating this extension is to create an NLP model using \[MindsDB\]().
+The extension was made by me from scratch and it was not at all an easy task. Being my first chrome extension, I had to go through a lot of resources and references to create it. The first step to creating this extension is to create an NLP model using [MindsDB](https://mindsbd.com).
 
 * Create a free account on \[MindsDB\](https://mindsdb.com) to get access to their cloud dashboard.
     
@@ -28,7 +28,7 @@ The extension was made by me from scratch and it was not at all an easy task. Be
         prompt_template = 'provide a concise and easy to understand explanation of the given code block:{{block}}, make sure it can be easily understood even by beginners';
     ```
     
-* Once you have created your model, It's time to integrate it with your extension, I made my backend using Flask (Python) and used the \[MindsDB Python SDK\]([https://pypi.org/project/mindsdb-sdk/](https://pypi.org/project/mindsdb-sdk/)) to connect with my MindsDB instance.
+* Once you have created your model, It's time to integrate it with your extension, I made my backend using Flask (Python) and used the [MindsDB Python SDK](https://pypi.org/project/mindsdb-sdk/) to connect with my MindsDB instance.
     
     We are using Flask to create the API. Firstly, we need to get the URL arguments that contain the code block and then we feed the code block data to our MindsDB model using the Python SDK which returns a DataFrame. The DataFrame contains our code explanation which we can return as response from the API.
     
@@ -96,14 +96,14 @@ The extension was made by me from scratch and it was not at all an easy task. Be
         app.run(debug=True)
     ```
     
-* Once your backend is ready, you can start building the extension and connect your backend to it, Since the extension code is a bit complex, it would be unnecessary to include it here, but the source code can be seen \[here\](https://github.com/asrvd/syntaxify)
+* Once your backend is ready, you can start building the extension and connect your backend to it, Since the extension code is a bit complex, it would be unnecessary to include it here, but the source code can be seen [here](https://github.com/asrvd/syntaxify).
     
 
 ## Usage
 
 Here comes the most interesting part, you can use the extension right in your browser and it takes just a few steps.
 
-* Clone the \[Syntaxify GitHub Repository\]() locally using git CLI or downloading it as zip file.
+* Clone the [Syntaxify GitHub Repository](https://github.com/asrvd/syntaxify) locally using git CLI or downloading it as zip file.
     
 * Inside the repository, you would see a `dist` folder. That's the extension that we need to load.
     
@@ -124,7 +124,7 @@ Here comes the most interesting part, you can use the extension right in your br
 
 * Extension Repository - https://github.com/asrvd/syntaxify
     
-* Backend Repository - [https://github.com/asrvd/stx-backend](https://github.com/asrvd/stx-backend)
+* Backend Repository - https://github.com/asrvd/stx-backend
     
 * MindsDB - https://mindsdb.com
     
@@ -133,4 +133,4 @@ Here comes the most interesting part, you can use the extension right in your br
 
 In conclusion, Syntaxify is a game-changing tool that can make the life of developers easier by providing an easy-to-understand explanation of complex code blocks. It can help beginners learn to code faster and more efficiently while also benefiting experienced developers by saving them valuable time and effort. With this extension, you can improve your coding skills, become a more productive developer, and ultimately, create better software.
 
-Thanks a lot \[Hashnode\](https://hashnode.com) and \[MindsDB\](https://mindsdb.com) for giving me this amazing opportunity to work on this project. I learned a lot from this hackathon build.
+Thanks a lot [Hashnode](https://hashnode.com) and [MindsDB](https://mindsdb.com) for giving me this amazing opportunity to work on this project. I learned a lot from this hackathon build.
