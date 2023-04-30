@@ -109,16 +109,16 @@ Here comes the most interesting part, you can use the extension right in your br
     
 * Open Chrome, and then go to the `Settings > Extensions` and enable \*\*Developer Mode\*\*.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1682844566400/3ab5ffb8-ee2a-4283-8d79-c46b88b3b4f8.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1682844566400/3ab5ffb8-ee2a-4283-8d79-c46b88b3b4f8.png)
     
 * Now click on **Load Unpacked** and then select the `dist` folder that we cloned in step 1.
     
-    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1682844655074/cce91366-c513-43a2-bf79-b557c26a5be7.png align="center")
+    ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1682844655074/cce91366-c513-43a2-bf79-b557c26a5be7.png)
     
 * Your extension is loaded and ready to use now. Watch this video to learn how to use it!
-    
-    %[https://youtu.be/8oO1B5kAEMA] 
-    
+ 
+    https://user-images.githubusercontent.com/68690233/235345010-cfd5cd4f-0edd-4b33-be40-4fdae0055529.mp4
+
 
 ## Links
 
